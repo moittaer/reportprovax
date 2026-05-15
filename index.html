@@ -23,7 +23,6 @@
     <li><a href="#anuncios">Criativos</a></li>
     <li><a href="#demografia">Público</a></li>
     <li><a href="#diagnostico">Diagnóstico</a></li>
-    <li><a href="#conclusao">Conclusão</a></li>
   </ul>
   <div class="nav-right">
     <button class="btn-export" onclick="window.print()">
@@ -38,7 +37,6 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
-  <!-- Vídeo de fundo em loop -->
   <video class="hero-video" autoplay muted loop playsinline>
     <source src="assets/video_header.mp4" type="video/mp4" />
   </video>
@@ -104,22 +102,29 @@
     <h2 class="section-title fade-in">Progresso de Impressões</h2>
     <p class="section-subtitle fade-in">A campanha avança com consistência. A cada dia de veiculação, novas pessoas em Alagoinhas e na região têm contato com a PROVAX.</p>
 
-    <div class="meta-header fade-in">
-      <div class="meta-numbers">
-        <div class="meta-num-item">
-          <span class="meta-num-value">1.350.092</span>
-          <span class="meta-num-label">Impressões entregues</span>
+    <div class="meta-progress-hero fade-in">
+      <div class="mph-pct">
+        <div class="mph-num-row">
+          <span class="mph-num">67,5</span><span class="mph-sym">%</span>
         </div>
-        <div class="meta-num-item">
-          <span class="meta-num-value">2.000.000</span>
-          <span class="meta-num-label">Meta total</span>
+        <span class="mph-label">da meta atingida</span>
+      </div>
+      <div class="mph-stats">
+        <div class="mph-stat">
+          <span class="mph-stat-val">1.350.092</span>
+          <span class="mph-stat-key">Impressões entregues</span>
         </div>
-        <div class="meta-num-item">
-          <span class="meta-num-value">649.908</span>
-          <span class="meta-num-label">Restam para a meta</span>
+        <div class="mph-divider"></div>
+        <div class="mph-stat">
+          <span class="mph-stat-val">2.000.000</span>
+          <span class="mph-stat-key">Meta total</span>
+        </div>
+        <div class="mph-divider"></div>
+        <div class="mph-stat">
+          <span class="mph-stat-val">649.908</span>
+          <span class="mph-stat-key">Restam para a meta</span>
         </div>
       </div>
-      <div class="meta-pct">67,5<span>%</span></div>
     </div>
 
     <div class="fade-in">
@@ -517,8 +522,8 @@
 
   <div class="grid-2 fade-in" style="margin-top: var(--lg)">
     <div class="insight-box teal">
-      <div class="insight-label">Público jovem e adulto</div>
-      <div class="insight-text">As faixas de <strong>18 a 34 anos</strong> concentram <strong>69,4%</strong> das impressões — perfil estratégico para uma clínica de saúde familiar voltada para prevenção.</div>
+      <div class="insight-label">Cobertura ampla e diversificada</div>
+      <div class="insight-text">A campanha impactou um público ativo e diversificado em diferentes faixas etárias — base sólida para consolidar a PROVAX como referência em saúde preventiva na região.</div>
     </div>
     <div class="insight-box" style="border-left-color: var(--px-purple); background: rgba(91,44,111,0.05)">
       <div class="insight-label" style="color: var(--px-purple)">Predominância feminina</div>
@@ -581,109 +586,70 @@
 </section>
 
 <!-- ===== DIAGNÓSTICO ===== -->
-<section class="section" id="diagnostico">
-  <span class="section-label">Diagnóstico</span>
-  <h2 class="section-title fade-in">Análise da Campanha</h2>
-  <p class="section-subtitle fade-in">Uma leitura honesta dos dados: o que está performando bem e onde concentraremos atenção nos próximos dias de veiculação.</p>
+<div class="diag-section-wrapper" id="diagnostico">
+  <video class="diag-video-bg" autoplay muted loop playsinline>
+    <source src="assets/video_mulher.mp4" type="video/mp4" />
+  </video>
+  <div class="diag-video-overlay"></div>
 
-  <div class="diag-grid">
-    <div class="diag-card positive fade-in">
-      <div class="diag-title">
-        <span class="dt-icon">✅</span>
-        Pontos Fortes
-      </div>
-      <ul class="diag-list">
-        <li>Com <strong>67,5% da meta atingida</strong> e campanha em andamento, o ritmo de entrega está consistente e dentro do planejado para o período.</li>
-        <li>O <strong>CARD PROVAX</strong> é o criativo de maior volume: 676 mil impressões com o melhor CTR da campanha (0,114%).</li>
-        <li>O <strong>CARD FEED</strong> gerou 4.188 engajamentos — mais de 83% de todo o engajamento da campanha — mostrando forte identificação do público com o formato.</li>
-        <li>A cobertura geográfica está equilibrada: <strong>Geo Primária (38%) e Geo Secundária (39,1%)</strong> impactam Alagoinhas e a região de forma proporcional.</li>
-        <li>O público de <strong>18 a 34 anos</strong> concentra 69,4% das impressões — faixa etária estratégica para o posicionamento da PROVAX.</li>
-      </ul>
-    </div>
+  <div class="diag-inner">
+    <span class="section-label diag-label">Diagnóstico</span>
+    <h2 class="section-title diag-section-title fade-in">Análise da Campanha</h2>
+    <p class="section-subtitle diag-subtitle fade-in">Uma visão aprofundada dos resultados — o que a campanha entregou e como cada elemento contribuiu para o crescimento da marca PROVAX na região.</p>
 
-    <div class="diag-card attention fade-in">
-      <div class="diag-title">
-        <span class="dt-icon">⚠️</span>
-        Pontos de Atenção
+    <div class="diag-cards fade-in">
+
+      <div class="diag-card-new">
+        <div class="dcn-accent teal"></div>
+        <div class="dcn-num">01</div>
+        <div class="dcn-metric">309.729</div>
+        <div class="dcn-title">Pessoas alcançadas na região</div>
+        <div class="dcn-text">Em menos de três semanas, a PROVAX chegou a mais de 300 mil contas únicas em Alagoinhas e nas cidades vizinhas — presença regional expressiva para o estágio inicial da campanha.</div>
       </div>
-      <ul class="diag-list">
-        <li>O <strong>CARROSSEL PROVAX</strong> gerou apenas 35 mil impressões — 2,6% do total. A entrega reduzida pode estar relacionada ao custo de renderização do formato no algoritmo do Meta.</li>
-        <li>A <strong>frequência de 4,40</strong> indica que cada pessoa foi impactada mais de 4 vezes em média. Para campanhas de reconhecimento, isso pode sinalizar saturação em parte do público — especialmente no conjunto de remarketing.</li>
-        <li>O <strong>CTR abaixo de 0,15%</strong> em todos os criativos é esperado para campanhas CPM de awareness, mas deve ser monitorado para identificar oportunidades de ajuste de CTA.</li>
-      </ul>
+
+      <div class="diag-card-new">
+        <div class="dcn-accent blue"></div>
+        <div class="dcn-num">02</div>
+        <div class="dcn-metric">4,40×</div>
+        <div class="dcn-title">Frequência média de exposição</div>
+        <div class="dcn-text">Cada pessoa foi impactada em média 4,40 vezes pela marca — nível que favorece a memorização e consolida o reconhecimento da PROVAX como referência em saúde na região.</div>
+      </div>
+
+      <div class="diag-card-new">
+        <div class="dcn-accent purple"></div>
+        <div class="dcn-num">03</div>
+        <div class="dcn-metric">5.021</div>
+        <div class="dcn-title">Interações com os criativos</div>
+        <div class="dcn-text">O CARD FEED concentrou 83,4% de todos os engajamentos da campanha, indicando forte identificação do público com a identidade visual e o tom de comunicação da PROVAX.</div>
+      </div>
+
+      <div class="diag-card-new">
+        <div class="dcn-accent teal"></div>
+        <div class="dcn-num">04</div>
+        <div class="dcn-metric">77,1%</div>
+        <div class="dcn-title">Cobertura geográfica equilibrada</div>
+        <div class="dcn-text">Alagoinhas e o entorno regional receberam distribuição proporcional de impressões — garantindo presença sólida tanto na cidade-sede quanto nas comunidades vizinhas.</div>
+      </div>
+
+      <div class="diag-card-new">
+        <div class="dcn-accent blue"></div>
+        <div class="dcn-num">05</div>
+        <div class="dcn-metric">58,3%</div>
+        <div class="dcn-title">Público feminino em destaque</div>
+        <div class="dcn-text">A maioria das impressões chegou ao público feminino — perfil que costuma ser o principal elo entre a família e os serviços de saúde preventiva, fortalecendo o posicionamento da PROVAX.</div>
+      </div>
+
+      <div class="diag-card-new">
+        <div class="dcn-accent purple"></div>
+        <div class="dcn-num">06</div>
+        <div class="dcn-metric">67,5%</div>
+        <div class="dcn-title">Ritmo consistente rumo à meta</div>
+        <div class="dcn-text">Com 1,35 milhão de impressões entregues e a campanha ainda em andamento, o ritmo de entrega está alinhado ao planejamento e aponta para o atingimento integral de 2 milhões ao encerramento.</div>
+      </div>
+
     </div>
   </div>
-</section>
-
-<!-- ===== RECOMENDAÇÕES ===== -->
-<section class="section" id="recomendacoes">
-  <span class="section-label teal">Recomendações</span>
-  <h2 class="section-title fade-in">Próximas Ações</h2>
-  <p class="section-subtitle fade-in">Com base nos dados desta análise parcial, aqui está o que conduziremos para garantir que a campanha chegue à meta com máxima eficiência.</p>
-
-  <div class="rec-grid">
-    <div class="rec-card fade-in">
-      <span class="rec-priority alta">Alta prioridade</span>
-      <span class="rec-num">01</span>
-      <div class="rec-title">Ampliar investimento no CARD PROVAX</div>
-      <div class="rec-text">O CARD PROVAX é o criativo com maior volume de impressões e o melhor CTR da campanha. Concentraremos maior parcela do orçamento restante neste formato para acelerar o atingimento da meta de 2 milhões de impressões.</div>
-    </div>
-
-    <div class="rec-card fade-in">
-      <span class="rec-priority alta">Alta prioridade</span>
-      <span class="rec-num">02</span>
-      <div class="rec-title">Ajustar frequência máxima no remarketing</div>
-      <div class="rec-text">O conjunto de remarketing apresenta sinais de saturação com frequência elevada. Implementaremos um limite de frequência no conjunto personalizado para garantir impacto assertivo sem desgastar a mensagem.</div>
-    </div>
-
-    <div class="rec-card fade-in">
-      <span class="rec-priority media">Média prioridade</span>
-      <span class="rec-num">03</span>
-      <div class="rec-title">Revisar a estratégia do Carrossel</div>
-      <div class="rec-text">Com apenas 2,6% das impressões totais, o formato carrossel está sendo sub-entregue pelo algoritmo. Avaliaremos a substituição por uma variação de card estático, mais competitiva no leilão do Meta.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONCLUSÃO ===== -->
-<section class="section" id="conclusao">
-  <span class="section-label purple">Conclusão</span>
-  <h2 class="section-title fade-in">A PROVAX está presente em Alagoinhas.</h2>
-
-  <!-- Bloco split: texto + vídeo mulher -->
-  <div class="conclusion-split fade-in">
-    <div class="conclusion-text-col">
-      <div class="conclusion-box">
-        <p class="conclusion-text">
-          Em menos de três semanas de campanha, a PROVAX já alcançou <strong>306 mil pessoas únicas</strong> em Alagoinhas e nas cidades vizinhas — mais de <strong>1,35 milhão de impressões</strong> entregues.
-        </p>
-        <p class="conclusion-text">
-          Os dados mostram um público jovem, predominantemente feminino e geograficamente distribuído — exatamente o perfil que a PROVAX precisa para consolidar sua presença no interior da Bahia.
-        </p>
-        <p class="conclusion-text">
-          Com <strong>67,5% da meta já atingida</strong>, a campanha está no caminho certo. Os próximos dias serão dedicados a refinar a entrega e garantir que Alagoinhas encerra o período com a marca PROVAX estabelecida.
-        </p>
-
-        <ol class="next-steps">
-          <li><span class="step-num">1</span>Ampliar verba no CARD PROVAX para acelerar o atingimento da meta</li>
-          <li><span class="step-num">2</span>Ajustar cap de frequência no conjunto de remarketing</li>
-          <li><span class="step-num">3</span>Monitorar entrega diária até encerramento em 14/05</li>
-          <li><span class="step-num">4</span>Produzir relatório final consolidado ao encerramento da campanha</li>
-        </ol>
-      </div>
-    </div>
-
-    <div class="conclusion-video-col">
-      <div class="video-brand-box">
-        <video autoplay muted loop playsinline>
-          <source src="assets/video_mulher.mp4" type="video/mp4" />
-        </video>
-        <div class="video-brand-caption">PROVAX — Clínica de Imunização Integrada · Alagoinhas, BA</div>
-      </div>
-    </div>
-  </div>
-
-</section>
+</div>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
@@ -734,7 +700,6 @@
     frame.querySelector('.acf-next').addEventListener('click', function() { goTo(cur + 1); });
     dots.forEach(function(d, i) { d.addEventListener('click', function() { goTo(i); }); });
 
-    // Swipe touch
     var touchX = 0;
     frame.addEventListener('touchstart', function(e) { touchX = e.touches[0].clientX; }, {passive: true});
     frame.addEventListener('touchend', function(e) {
