@@ -21,7 +21,7 @@
     <div style="display:flex; flex-direction:column; justify-content:center; gap:0;">
 
       <div style="display:flex; flex-direction:column; gap:0.4vw; margin-bottom:2vw;">
-        <div class="s-hero-badge">
+        <div class="s-hero-badge" style="font-size:clamp(8px,0.58vw,11px); padding:0.28vw 0.75vw; width:fit-content; align-self:flex-start;">
           <span class="dot"></span>
           Relatório Final &middot; Meta Ads &middot; Abr–Mai 2026
         </div>
@@ -29,9 +29,6 @@
           Campanha<br/>
           <span class="s-accent">PROVAX</span><br/>
           em Alagoinhas
-        </div>
-        <div class="s-body" style="color:rgba(255,255,255,0.55); margin-top:0.6vw; max-width:38vw; line-height:1.7;">
-          Em 30 dias, a PROVAX chegou à tela de <strong style="color:#fff;">401 mil pessoas</strong> — e a campanha superou a meta contratada.
         </div>
       </div>
 
@@ -60,11 +57,20 @@
 
     </div>
 
-    <!-- Direita: logos -->
-    <div class="s-hero-right">
-      <img src="assets/PROVAXLOGO.jpg" class="s-logo-pmh" alt="PROVAX" />
-      <div class="s-logo-sep"></div>
-      <img src="assets/logo-esquina.png" class="s-logo-e3" alt="Esquina" />
+    <!-- Direita: logo cliente circular -->
+    <div class="s-hero-right" style="justify-content:center;">
+      <div style="
+        width: clamp(100px, 12vw, 220px);
+        height: clamp(100px, 12vw, 220px);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(255,255,255,0.25);
+        box-shadow: 0 0 0 0.5vw rgba(255,255,255,0.06), 0 8px 40px rgba(0,0,0,0.35);
+        flex-shrink: 0;
+      ">
+        <img src="assets/PROVAXLOGO.jpg" alt="PROVAX"
+          style="width:100%; height:100%; object-fit:cover; display:block;" />
+      </div>
     </div>
 
   </div>
@@ -127,8 +133,8 @@
 
           <div class="s-insight success" style="flex:1; padding:1.8vw 2.2vw;">
             <div class="s-insight-label">Meta superada</div>
-            <div class="s-insight-text" style="font-size:clamp(13px,1.1vw,22px); line-height:1.75;">
-              A campanha encerrou com <strong>+26.246 impressões acima do contratado</strong> — demonstrando eficiência na gestão da verba e consistência na entrega ao longo de todo o mês.
+            <div class="s-insight-text" style="font-size:clamp(11px,0.95vw,18px); line-height:1.75;">
+              Em 30 dias, a PROVAX chegou à tela de <strong>402 mil pessoas</strong> — e a campanha superou a meta contratada. A campanha chegou ao fim com a missão completa. Durante um mês, a PROVAX esteve presente nas redes sociais da população de Alagoinhas e cidades vizinhas. 2 milhões de impressões depois, a comunicação da PROVAX ganhou uma escala que não existia antes. Não foi só mídia. Foi presença.
             </div>
           </div>
 
@@ -287,7 +293,7 @@
       <div class="s-kpi" style="padding:1.4vw 1.6vw;">
         <div class="s-kpi-label">Engajamentos</div>
         <div class="s-kpi-value count-up" data-target="1011" data-format="standard">0</div>
-        <div class="s-kpi-sub">Visitas IG: 1.048</div>
+        <div class="s-kpi-sub">Interações com o criativo</div>
       </div>
     </div>
 
@@ -341,7 +347,7 @@
       <div class="s-kpi" style="padding:1.4vw 1.6vw;">
         <div class="s-kpi-label">Engajamentos</div>
         <div class="s-kpi-value count-up" data-target="4932" data-format="standard">0</div>
-        <div class="s-kpi-sub s-kpi-pos">78% do total · Melhor engajamento</div>
+        <div class="s-kpi-sub s-kpi-pos">78% do total da campanha</div>
       </div>
     </div>
 
@@ -398,15 +404,15 @@
         <div class="s-kpi-value">98.286</div>
         <div class="s-kpi-sub">Freq. 1,48× por pessoa</div>
       </div>
-      <div class="s-kpi" style="padding:1.4vw 1.6vw; border-left:3px solid #00994D;">
-        <div class="s-kpi-label">CTR</div>
-        <div class="s-kpi-value s-kpi-pos">0,211%</div>
-        <div class="s-kpi-sub s-kpi-pos">Melhor CTR da campanha</div>
+      <div class="s-kpi" style="padding:1.4vw 1.6vw;">
+        <div class="s-kpi-label">Cliques no link</div>
+        <div class="s-kpi-value count-up" data-target="307" data-format="standard">0</div>
+        <div class="s-kpi-sub s-kpi-pos">CTR 0,211% · Melhor da campanha</div>
       </div>
       <div class="s-kpi" style="padding:1.4vw 1.6vw;">
-        <div class="s-kpi-label">Cliques / Engajamentos</div>
-        <div class="s-kpi-value">307 / 383</div>
-        <div class="s-kpi-sub">Visitas IG: 326</div>
+        <div class="s-kpi-label">Engajamentos</div>
+        <div class="s-kpi-value count-up" data-target="383" data-format="standard">0</div>
+        <div class="s-kpi-sub">Interações com o criativo</div>
       </div>
     </div>
 
