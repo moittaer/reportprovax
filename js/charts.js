@@ -1,4 +1,4 @@
-// ===== CHARTS — PROVAX × ESQUINA =====
+// ===== CHARTS — PROVAX × ESQUINA — RELATÓRIO FINAL =====
 
 Chart.defaults.font.family = "'Inter', sans-serif";
 Chart.defaults.plugins.legend.labels.usePointStyle = true;
@@ -97,9 +97,9 @@ if (ctxConj) {
   new Chart(ctxConj, {
     type: 'doughnut',
     data: {
-      labels: ['Geo Primária', 'Geo Secundária', 'Remarketing'],
+      labels: ['Geo Primária', 'Geo Secundária', 'Personalizado'],
       datasets: [{
-        data: [520604, 534917, 313914],
+        data: [923996, 575296, 526954],
         backgroundColor: [C.navy, C.blue, C.teal],
         borderColor: '#FFFFFF',
         borderWidth: 4,
@@ -128,7 +128,7 @@ if (ctxConj) {
         },
         centerText: {
           lines: [
-            { text: '1,37M', size: 22, weight: '800', color: '#111111', dy: -12 },
+            { text: '2,03M', size: 22, weight: '800', color: '#111111', dy: -12 },
             { text: 'impressões', size: 11, weight: '500', color: '#888888', dy: 12 },
           ]
         }
@@ -143,9 +143,9 @@ if (ctxAds) {
   new Chart(ctxAds, {
     type: 'bar',
     data: {
-      labels: ['CARD PROVAX', 'CARD FEED', 'CARROSSEL'],
+      labels: ['DARK CARD', 'CARD FEED', 'DARK CARROSSEL'],
       datasets: [{
-        data: [686327, 647524, 35584],
+        data: [813870, 1066746, 145630],
         backgroundColor: [C.navy, C.blue, C.teal],
         borderColor: 'transparent',
         borderWidth: 0,
@@ -157,7 +157,7 @@ if (ctxAds) {
       indexAxis: 'y',
       responsive: true,
       maintainAspectRatio: false,
-      layout: { padding: { right: 54 } },
+      layout: { padding: { right: 60 } },
       plugins: {
         legend: { display: false },
         tooltip: {
@@ -165,8 +165,8 @@ if (ctxAds) {
           callbacks: {
             title: ctx => ctx[0].label,
             label: ctx => {
-              const cliques = [788, 691, 38];
-              const ctr     = ['0,115%', '0,107%', '0,107%'];
+              const cliques = [981, 1351, 307];
+              const ctr     = ['0,121%', '0,127%', '0,211%'];
               const i = ctx.dataIndex;
               return [
                 '  ' + ctx.parsed.x.toLocaleString('pt-BR') + ' impressões',
@@ -204,7 +204,7 @@ if (ctxAge) {
     data: {
       labels: ['18–24', '25–34', '35–44', '45–54', '55–64', '65+'],
       datasets: [{
-        data: [463807, 486222, 220028, 115913, 56894, 26571],
+        data: [458980, 681097, 325884, 326350, 160654, 73257],
         backgroundColor: [C.navy, C.navy, C.blue, C.blue, C.teal, C.teal],
         borderColor: 'transparent',
         borderWidth: 0,
@@ -223,7 +223,7 @@ if (ctxAge) {
           callbacks: {
             title: ctx => ctx[0].label + ' anos',
             label: ctx => {
-              const pcts = ['33,9%', '35,5%', '16,1%', '8,5%', '4,2%', '1,9%'];
+              const pcts = ['22,7%', '33,6%', '16,1%', '16,1%', '7,9%', '3,6%'];
               return '  ' + ctx.parsed.y.toLocaleString('pt-BR') + ' impr. (' + pcts[ctx.dataIndex] + ')';
             }
           }
@@ -257,7 +257,7 @@ if (ctxGen) {
     data: {
       labels: ['Feminino', 'Masculino'],
       datasets: [{
-        data: [798590, 570845],
+        data: [1172902, 849414],
         backgroundColor: [C.navy, C.teal],
         borderColor: '#FFFFFF',
         borderWidth: 4,
@@ -278,7 +278,7 @@ if (ctxGen) {
           callbacks: {
             title: ctx => ctx[0].label,
             label: ctx => {
-              const total = 1369435;
+              const total = 2022316; // feminino + masculino (excl. unknown)
               const pct = ((ctx.parsed / total) * 100).toFixed(1);
               return '  ' + ctx.parsed.toLocaleString('pt-BR') + ' impr. (' + pct + '%)';
             }
@@ -286,7 +286,7 @@ if (ctxGen) {
         },
         centerText: {
           lines: [
-            { text: '58,3%', size: 22, weight: '800', color: '#111111', dy: -12 },
+            { text: '58,0%', size: 22, weight: '800', color: '#111111', dy: -12 },
             { text: 'feminino', size: 11, weight: '500', color: '#888888', dy: 12 },
           ]
         }
@@ -294,18 +294,3 @@ if (ctxGen) {
     }
   });
 }
-
-// ── Animações de entrada ─────────────────────────────────
-document.addEventListener('DOMContentLoaded', function () {
-  setTimeout(function() {
-    var fill = document.querySelector('.progress-fill');
-    if (fill) fill.style.width = '67.5%';
-  }, 400);
-
-  setTimeout(function() {
-    document.querySelectorAll('.cb-fill').forEach(function(el) {
-      var w = el.getAttribute('data-width');
-      if (w) el.style.width = w;
-    });
-  }, 600);
-});
